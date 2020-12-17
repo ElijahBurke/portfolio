@@ -1,0 +1,92 @@
+@import '../../../variables.scss';
+.project_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .inner_container {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s ease-in-out;
+    .inner__image {
+      width: 70%;
+      position: absolute;
+      top: 8%;
+      transform: scale(0.2);
+      opacity: 0.7;
+      max-height: 100%;
+    }
+    .inner_left-container {
+      width: 35%;
+      height: 95%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      .left-container__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .left-container__title {
+          font-size: 4rem;
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+          width: 100%;
+          min-width: 250px;
+          margin-bottom: 6%;
+          a {
+            margin-left: 5%;
+            width: 20%;
+            img {
+              width: 100%;
+              cursor: pointer;
+            }
+          }
+        }
+        .left-container__content {
+          width: 100%;
+          font-size: 1.6rem;
+          letter-spacing: 0.05em;
+        }
+      }
+      .left-container__stack {
+        height: 35%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        img {
+          width: 26%;
+          padding: 1% 2%;
+          margin: 1% 2%;
+          object-position: 50% 50%;
+          object-fit: scale-down;
+        }
+      }
+    }
+    .small-screen__button-container {
+      height: 16%;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      .small-screen__see-more{
+        @include button-default(white);
+        padding: 3% 4%;
+        min-width: 150px;
+        font-size: 1.6rem;
+        margin: 1% 0%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+      }
+    }
+  }
+}

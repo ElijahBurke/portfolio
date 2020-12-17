@@ -1,0 +1,10 @@
+@mixin button-default($color) {
+  margin: 0;
+  border: 1px $color solid;
+  color: $color;
+  background: transparent;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
