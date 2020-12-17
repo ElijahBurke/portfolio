@@ -44,7 +44,6 @@ const Profile = ({ dark }) => {
   };
 
   useEffect(() => {
-    console.log(screenSize);
     if (screenSize === 'LARGE' || screenSize === 'XLARGE') setShowSkills(true);
   }, [screenSize]);
 
